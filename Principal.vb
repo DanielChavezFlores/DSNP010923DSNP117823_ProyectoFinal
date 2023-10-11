@@ -39,9 +39,16 @@
 
     Private Sub Principal_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
 
+        Seleccionarletras(e.KeyCode.ToString)
+
+    End Sub
+
+
+    Sub Seleccionarletras(cadena As String)
+
         For Each Grupo In Controls
             If TypeOf Grupo Is TextBox Then
-                If Grupo.text = e.KeyCode.ToString Then
+                If Grupo.text = cadena Then
                     Grupo.forecolor = Color.Black
 
                 End If
@@ -49,7 +56,7 @@
 
             If TypeOf Grupo Is Button Then
 
-                If Grupo.text = e.KeyCode.ToString Then
+                If Grupo.text = cadena Then
 
                     Grupo.enabled = False
 
@@ -58,5 +65,8 @@
 
         Next
 
+
     End Sub
+
+
 End Class
