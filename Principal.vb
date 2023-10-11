@@ -46,6 +46,16 @@
 
                 End If
             End If
+
+            If TypeOf Grupo Is Button Then
+
+                If Grupo.text = e.KeyCode.ToString Then
+
+                    Grupo.enabled = False
+
+                End If
+            End If
+
         Next
 
     End Sub
