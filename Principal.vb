@@ -7,7 +7,7 @@
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        intentos = intentos + 1
+        intentos = 0
 
     End Sub
 
