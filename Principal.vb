@@ -2,8 +2,12 @@
 
 
     Dim Grupo As Object
+    Dim intentos As Integer
+
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        intentos = intentos + 1
 
     End Sub
 
@@ -11,7 +15,6 @@
 
         Dim Aleatorio As New Random
         Dim N, i As Integer
-
 
 
         N = Aleatorio.Next(0, Lista_palabras.Items.Count)
@@ -65,6 +68,8 @@
 
         Next
 
+        intentos = intentos + 1
+        Caja_de_intentos.Text = intentos
 
     End Sub
 
@@ -75,4 +80,7 @@
         Seleccionarletras(sender.text)
 
     End Sub
+
+
+
 End Class
