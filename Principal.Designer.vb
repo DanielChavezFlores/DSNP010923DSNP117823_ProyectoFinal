@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Principal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,10 @@ Partial Class Principal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal))
         Me.Lista_palabras = New System.Windows.Forms.ListBox()
         Me.Btn_Jugar = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -61,12 +63,13 @@ Partial Class Principal
         Me.Button25 = New System.Windows.Forms.Button()
         Me.Button26 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Caja_de_intentos = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Caja_aciertos = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Caja_fallos = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Caja_aciertos = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Caja_de_intentos = New System.Windows.Forms.TextBox()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,7 +86,7 @@ Partial Class Principal
         '
         'Btn_Jugar
         '
-        Me.Btn_Jugar.Location = New System.Drawing.Point(678, 523)
+        Me.Btn_Jugar.Location = New System.Drawing.Point(670, 549)
         Me.Btn_Jugar.Name = "Btn_Jugar"
         Me.Btn_Jugar.Size = New System.Drawing.Size(100, 55)
         Me.Btn_Jugar.TabIndex = 1
@@ -491,26 +494,26 @@ Partial Class Principal
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
-        'Label1
+        'Label3
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(10, 32)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 19)
-        Me.Label1.TabIndex = 13
-        Me.Label1.Text = "Intentos"
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(10, 102)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(55, 19)
+        Me.Label3.TabIndex = 17
+        Me.Label3.Text = "Fallos"
         '
-        'Caja_de_intentos
+        'Caja_fallos
         '
-        Me.Caja_de_intentos.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Caja_de_intentos.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.Caja_de_intentos.Location = New System.Drawing.Point(85, 26)
-        Me.Caja_de_intentos.Name = "Caja_de_intentos"
-        Me.Caja_de_intentos.Size = New System.Drawing.Size(97, 29)
-        Me.Caja_de_intentos.TabIndex = 12
-        Me.Caja_de_intentos.Text = "0"
-        Me.Caja_de_intentos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Caja_fallos.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Caja_fallos.ForeColor = System.Drawing.SystemColors.MenuText
+        Me.Caja_fallos.Location = New System.Drawing.Point(85, 96)
+        Me.Caja_fallos.Name = "Caja_fallos"
+        Me.Caja_fallos.Size = New System.Drawing.Size(97, 29)
+        Me.Caja_fallos.TabIndex = 16
+        Me.Caja_fallos.Text = "0"
+        Me.Caja_fallos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label2
         '
@@ -533,32 +536,46 @@ Partial Class Principal
         Me.Caja_aciertos.Text = "0"
         Me.Caja_aciertos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label3
+        'Label1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(10, 102)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(55, 19)
-        Me.Label3.TabIndex = 17
-        Me.Label3.Text = "Fallos"
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(10, 32)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(71, 19)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Intentos"
         '
-        'Caja_fallos
+        'Caja_de_intentos
         '
-        Me.Caja_fallos.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Caja_fallos.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.Caja_fallos.Location = New System.Drawing.Point(85, 96)
-        Me.Caja_fallos.Name = "Caja_fallos"
-        Me.Caja_fallos.Size = New System.Drawing.Size(97, 29)
-        Me.Caja_fallos.TabIndex = 16
-        Me.Caja_fallos.Text = "0"
-        Me.Caja_fallos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Caja_de_intentos.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Caja_de_intentos.ForeColor = System.Drawing.SystemColors.MenuText
+        Me.Caja_de_intentos.Location = New System.Drawing.Point(85, 26)
+        Me.Caja_de_intentos.Name = "Caja_de_intentos"
+        Me.Caja_de_intentos.Size = New System.Drawing.Size(97, 29)
+        Me.Caja_de_intentos.TabIndex = 12
+        Me.Caja_de_intentos.Text = "0"
+        Me.Caja_de_intentos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'ImageList1
+        '
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "Pic 7.jpg")
+        Me.ImageList1.Images.SetKeyName(1, "Pic 1.jpg")
+        Me.ImageList1.Images.SetKeyName(2, "Pic 2.jpg")
+        Me.ImageList1.Images.SetKeyName(3, "Pic 3.jpg")
+        Me.ImageList1.Images.SetKeyName(4, "Pic 4.jpg")
+        Me.ImageList1.Images.SetKeyName(5, "Pic 5.jpg")
+        Me.ImageList1.Images.SetKeyName(6, "Pic 6.jpg")
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(678, 12)
+        Me.PictureBox1.Image = Global.DSNP010923DSNP117823_ProyectoFinal.My.Resources.Resources.Pic_7
+        Me.PictureBox1.Location = New System.Drawing.Point(634, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(353, 454)
+        Me.PictureBox1.Size = New System.Drawing.Size(397, 505)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 39
         Me.PictureBox1.TabStop = False
         '
@@ -664,4 +681,5 @@ Partial Class Principal
     Friend WithEvents Label3 As Label
     Friend WithEvents Caja_fallos As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ImageList1 As ImageList
 End Class

@@ -17,40 +17,7 @@
 
     Private Sub Btn_Jugar_Click(sender As Object, e As EventArgs) Handles Btn_Jugar.Click
 
-        Dim Aleatorio As New Random
-        Dim N, i As Integer
-
-        N = 0
-        N = Aleatorio.Next(0, Lista_palabras.Items.Count)
-        MsgBox(N)
-        Lista_palabras.SelectedIndex = N
-
-        i = 11
-
-        For Each Grupo In Controls
-
-            If TypeOf Grupo Is TextBox Then
-
-                i = i - 1
-                Grupo.text = Mid(Lista_palabras.SelectedItem, i, 1)
-                Grupo.forecolor = Color.White
-            End If
-
-            If TypeOf Grupo Is Button Then
-
-                Grupo.enabled = True
-
-            End If
-
-        Next
-
-        Caja_aciertos.Text = 0
-        Caja_de_intentos.Text = 0
-        Caja_fallos.Text = 0
-        coincidencia_contador = 0
-        intentos = 0
-        Fallos = 0
-        Jugar = True
+        Volver_a_jugar()
 
     End Sub
 
@@ -89,10 +56,20 @@
             Else
                 Fallos = Fallos + 1
             End If
+
             intentos = intentos + 1
             Caja_de_intentos.Text = intentos
             Caja_aciertos.Text = coincidencia_contador
             Caja_fallos.Text = Fallos
+
+            If Fallos < 7 Then
+                PictureBox1.Image = ImageList1.Images(Fallos)
+            ElseIf Fallos >= 7 Then
+                MsgBox("Perdiste")
+                Volver_a_jugar()
+            End If
+
+
         End If
 
     End Sub
@@ -105,6 +82,45 @@
 
     End Sub
 
+
+    Sub Volver_a_jugar()
+
+        Dim Aleatorio As New Random
+        Dim N, i As Integer
+
+        N = 0
+        N = Aleatorio.Next(0, Lista_palabras.Items.Count)
+        Lista_palabras.SelectedIndex = N
+
+        i = 11
+
+        For Each Grupo In Controls
+
+            If TypeOf Grupo Is TextBox Then
+
+                i = i - 1
+                Grupo.text = Mid(Lista_palabras.SelectedItem, i, 1)
+                Grupo.forecolor = Color.White
+            End If
+
+            If TypeOf Grupo Is Button Then
+
+                Grupo.enabled = True
+
+            End If
+
+        Next
+
+        Caja_aciertos.Text = 0
+        Caja_de_intentos.Text = 0
+        Caja_fallos.Text = 0
+        coincidencia_contador = 0
+        intentos = 0
+        Fallos = 0
+        Jugar = True
+        PictureBox1.Image = ImageList1.Images(0)
+
+    End Sub
 
 
 End Class
