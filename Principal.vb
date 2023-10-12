@@ -40,8 +40,13 @@
             End If
 
         Next
-        MsgBox(Lista_palabras.SelectedItem, i, 9)
 
+        Caja_aciertos.Text = 0
+        Caja_de_intentos.Text = 0
+        Caja_fallos.Text = 0
+        coincidencia_contador = 0
+        intentos = 0
+        Fallos = 0
 
 
     End Sub
