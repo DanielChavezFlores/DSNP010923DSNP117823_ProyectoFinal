@@ -2,6 +2,7 @@
 
     Dim coincidencia_contador As Integer
     Dim Grupo As Object
+    Dim Jugar As Boolean
     Dim intentos As Integer
     Dim Fallos As Integer
 
@@ -9,6 +10,8 @@
 
         intentos = 0
         coincidencia_contador = 0
+        Fallos = 0
+        Jugar = False
 
     End Sub
 
@@ -17,7 +20,7 @@
         Dim Aleatorio As New Random
         Dim N, i As Integer
 
-
+        N = 0
         N = Aleatorio.Next(0, Lista_palabras.Items.Count)
         MsgBox(N)
         Lista_palabras.SelectedIndex = N
@@ -47,7 +50,7 @@
         coincidencia_contador = 0
         intentos = 0
         Fallos = 0
-
+        Jugar = True
 
     End Sub
 
@@ -59,37 +62,38 @@
 
 
     Sub Seleccionarletras(cadena As String)
+        If Jugar Then
 
-        Dim coincidencia As Boolean
+            Dim coincidencia As Boolean
 
-        For Each Grupo In Controls
-            If TypeOf Grupo Is TextBox Then
-                If Grupo.text = cadena Then
-                    Grupo.forecolor = Color.Black
-                    coincidencia = True
+            For Each Grupo In Controls
+                If TypeOf Grupo Is TextBox Then
+                    If Grupo.text = cadena Then
+                        Grupo.forecolor = Color.Black
+                        coincidencia = True
+                    End If
                 End If
-            End If
 
-            If TypeOf Grupo Is Button Then
+                If TypeOf Grupo Is Button Then
 
-                If Grupo.text = cadena Then
+                    If Grupo.text = cadena Then
 
-                    Grupo.enabled = False
+                        Grupo.enabled = False
 
+                    End If
                 End If
-            End If
 
-        Next
-        If coincidencia Then
-            coincidencia_contador = coincidencia_contador + 1
-        Else
-            Fallos = Fallos + 1
+            Next
+            If coincidencia Then
+                coincidencia_contador = coincidencia_contador + 1
+            Else
+                Fallos = Fallos + 1
+            End If
+            intentos = intentos + 1
+            Caja_de_intentos.Text = intentos
+            Caja_aciertos.Text = coincidencia_contador
+            Caja_fallos.Text = Fallos
         End If
-        intentos = intentos + 1
-        Caja_de_intentos.Text = intentos
-        Caja_aciertos.Text = coincidencia_contador
-        Caja_fallos.Text = Fallos
-
 
     End Sub
 
