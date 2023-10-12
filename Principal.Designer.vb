@@ -65,6 +65,8 @@ Partial Class Principal
         Me.Caja_de_intentos = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Caja_aciertos = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Caja_fallos = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -448,6 +450,8 @@ Partial Class Principal
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Caja_fallos)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Caja_aciertos)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -484,7 +488,7 @@ Partial Class Principal
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(10, 73)
+        Me.Label2.Location = New System.Drawing.Point(10, 67)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(72, 19)
         Me.Label2.TabIndex = 15
@@ -494,12 +498,33 @@ Partial Class Principal
         '
         Me.Caja_aciertos.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Caja_aciertos.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.Caja_aciertos.Location = New System.Drawing.Point(85, 67)
+        Me.Caja_aciertos.Location = New System.Drawing.Point(85, 61)
         Me.Caja_aciertos.Name = "Caja_aciertos"
         Me.Caja_aciertos.Size = New System.Drawing.Size(97, 29)
         Me.Caja_aciertos.TabIndex = 14
         Me.Caja_aciertos.Text = "0"
         Me.Caja_aciertos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(10, 102)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(55, 19)
+        Me.Label3.TabIndex = 17
+        Me.Label3.Text = "Fallos"
+        '
+        'Caja_fallos
+        '
+        Me.Caja_fallos.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Caja_fallos.ForeColor = System.Drawing.SystemColors.MenuText
+        Me.Caja_fallos.Location = New System.Drawing.Point(85, 96)
+        Me.Caja_fallos.Name = "Caja_fallos"
+        Me.Caja_fallos.Size = New System.Drawing.Size(97, 29)
+        Me.Caja_fallos.TabIndex = 16
+        Me.Caja_fallos.Text = "0"
+        Me.Caja_fallos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Principal
         '
@@ -598,4 +623,6 @@ Partial Class Principal
     Friend WithEvents Caja_de_intentos As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Caja_aciertos As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Caja_fallos As TextBox
 End Class

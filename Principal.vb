@@ -3,7 +3,7 @@
     Dim coincidencia_contador As Integer
     Dim Grupo As Object
     Dim intentos As Integer
-
+    Dim Fallos As Integer
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -72,10 +72,13 @@
         Next
         If coincidencia Then
             coincidencia_contador = coincidencia_contador + 1
+        Else
+            Fallos = Fallos + 1
         End If
         intentos = intentos + 1
         Caja_de_intentos.Text = intentos
         Caja_aciertos.Text = coincidencia_contador
+        Caja_fallos.Text = Fallos
 
 
     End Sub
