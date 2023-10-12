@@ -63,6 +63,8 @@ Partial Class Principal
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Caja_de_intentos = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Caja_aciertos = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -446,6 +448,8 @@ Partial Class Principal
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Caja_aciertos)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Caja_de_intentos)
         Me.GroupBox1.Location = New System.Drawing.Point(763, 52)
@@ -458,9 +462,10 @@ Partial Class Principal
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(30, 36)
+        Me.Label1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(10, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 13)
+        Me.Label1.Size = New System.Drawing.Size(71, 19)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Intentos"
         '
@@ -474,6 +479,27 @@ Partial Class Principal
         Me.Caja_de_intentos.TabIndex = 12
         Me.Caja_de_intentos.Text = "0"
         Me.Caja_de_intentos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(10, 73)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(72, 19)
+        Me.Label2.TabIndex = 15
+        Me.Label2.Text = "Aciertos"
+        '
+        'Caja_aciertos
+        '
+        Me.Caja_aciertos.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Caja_aciertos.ForeColor = System.Drawing.SystemColors.MenuText
+        Me.Caja_aciertos.Location = New System.Drawing.Point(85, 67)
+        Me.Caja_aciertos.Name = "Caja_aciertos"
+        Me.Caja_aciertos.Size = New System.Drawing.Size(97, 29)
+        Me.Caja_aciertos.TabIndex = 14
+        Me.Caja_aciertos.Text = "0"
+        Me.Caja_aciertos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Principal
         '
@@ -570,4 +596,6 @@ Partial Class Principal
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Caja_de_intentos As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Caja_aciertos As TextBox
 End Class

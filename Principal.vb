@@ -1,6 +1,6 @@
 ﻿Public Class Principal
 
-
+    Dim coincidencia_contador As Integer
     Dim Grupo As Object
     Dim intentos As Integer
 
@@ -8,6 +8,7 @@
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         intentos = 0
+        coincidencia_contador = 0
 
     End Sub
 
@@ -49,11 +50,13 @@
 
     Sub Seleccionarletras(cadena As String)
 
+        Dim coincidencia As Boolean
+
         For Each Grupo In Controls
             If TypeOf Grupo Is TextBox Then
                 If Grupo.text = cadena Then
                     Grupo.forecolor = Color.Black
-
+                    coincidencia = True
                 End If
             End If
 
@@ -67,9 +70,13 @@
             End If
 
         Next
-
+        If coincidencia Then
+            coincidencia_contador = coincidencia_contador + 1
+        End If
         intentos = intentos + 1
         Caja_de_intentos.Text = intentos
+        Caja_aciertos.Text = coincidencia_contador
+
 
     End Sub
 
