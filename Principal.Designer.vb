@@ -190,6 +190,7 @@ Partial Class Principal
         '
         'Button1
         '
+        Me.Button1.Enabled = False
         Me.Button1.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(84, 333)
         Me.Button1.Name = "Button1"
@@ -200,6 +201,7 @@ Partial Class Principal
         '
         'Button2
         '
+        Me.Button2.Enabled = False
         Me.Button2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(142, 333)
         Me.Button2.Name = "Button2"
@@ -210,6 +212,7 @@ Partial Class Principal
         '
         'Button3
         '
+        Me.Button3.Enabled = False
         Me.Button3.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(207, 333)
         Me.Button3.Name = "Button3"
@@ -220,6 +223,7 @@ Partial Class Principal
         '
         'Button4
         '
+        Me.Button4.Enabled = False
         Me.Button4.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(271, 333)
         Me.Button4.Name = "Button4"
@@ -230,6 +234,7 @@ Partial Class Principal
         '
         'Button5
         '
+        Me.Button5.Enabled = False
         Me.Button5.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(332, 333)
         Me.Button5.Name = "Button5"
@@ -240,6 +245,7 @@ Partial Class Principal
         '
         'Button6
         '
+        Me.Button6.Enabled = False
         Me.Button6.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.Location = New System.Drawing.Point(392, 333)
         Me.Button6.Name = "Button6"
@@ -250,6 +256,7 @@ Partial Class Principal
         '
         'Button7
         '
+        Me.Button7.Enabled = False
         Me.Button7.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.Location = New System.Drawing.Point(456, 333)
         Me.Button7.Name = "Button7"
@@ -260,6 +267,7 @@ Partial Class Principal
         '
         'Button8
         '
+        Me.Button8.Enabled = False
         Me.Button8.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.Location = New System.Drawing.Point(525, 333)
         Me.Button8.Name = "Button8"
@@ -270,6 +278,7 @@ Partial Class Principal
         '
         'Button9
         '
+        Me.Button9.Enabled = False
         Me.Button9.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.Location = New System.Drawing.Point(596, 333)
         Me.Button9.Name = "Button9"
@@ -280,6 +289,7 @@ Partial Class Principal
         '
         'Button10
         '
+        Me.Button10.Enabled = False
         Me.Button10.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.Location = New System.Drawing.Point(659, 333)
         Me.Button10.Name = "Button10"
@@ -290,6 +300,7 @@ Partial Class Principal
         '
         'Button11
         '
+        Me.Button11.Enabled = False
         Me.Button11.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.Location = New System.Drawing.Point(625, 394)
         Me.Button11.Name = "Button11"
@@ -300,6 +311,7 @@ Partial Class Principal
         '
         'Button12
         '
+        Me.Button12.Enabled = False
         Me.Button12.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.Location = New System.Drawing.Point(562, 394)
         Me.Button12.Name = "Button12"
@@ -310,6 +322,7 @@ Partial Class Principal
         '
         'Button13
         '
+        Me.Button13.Enabled = False
         Me.Button13.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.Location = New System.Drawing.Point(493, 394)
         Me.Button13.Name = "Button13"
@@ -320,6 +333,7 @@ Partial Class Principal
         '
         'Button14
         '
+        Me.Button14.Enabled = False
         Me.Button14.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button14.Location = New System.Drawing.Point(422, 394)
         Me.Button14.Name = "Button14"
@@ -330,6 +344,7 @@ Partial Class Principal
         '
         'Button15
         '
+        Me.Button15.Enabled = False
         Me.Button15.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button15.Location = New System.Drawing.Point(358, 394)
         Me.Button15.Name = "Button15"
@@ -340,6 +355,7 @@ Partial Class Principal
         '
         'Button16
         '
+        Me.Button16.Enabled = False
         Me.Button16.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button16.Location = New System.Drawing.Point(298, 394)
         Me.Button16.Name = "Button16"
@@ -350,6 +366,7 @@ Partial Class Principal
         '
         'Button17
         '
+        Me.Button17.Enabled = False
         Me.Button17.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button17.Location = New System.Drawing.Point(237, 394)
         Me.Button17.Name = "Button17"
@@ -360,6 +377,7 @@ Partial Class Principal
         '
         'Button18
         '
+        Me.Button18.Enabled = False
         Me.Button18.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button18.Location = New System.Drawing.Point(173, 394)
         Me.Button18.Name = "Button18"
@@ -370,6 +388,7 @@ Partial Class Principal
         '
         'Button19
         '
+        Me.Button19.Enabled = False
         Me.Button19.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button19.Location = New System.Drawing.Point(108, 394)
         Me.Button19.Name = "Button19"
@@ -380,6 +399,7 @@ Partial Class Principal
         '
         'Button20
         '
+        Me.Button20.Enabled = False
         Me.Button20.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button20.Location = New System.Drawing.Point(562, 461)
         Me.Button20.Name = "Button20"
@@ -390,6 +410,7 @@ Partial Class Principal
         '
         'Button21
         '
+        Me.Button21.Enabled = False
         Me.Button21.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button21.Location = New System.Drawing.Point(493, 461)
         Me.Button21.Name = "Button21"
@@ -400,6 +421,7 @@ Partial Class Principal
         '
         'Button22
         '
+        Me.Button22.Enabled = False
         Me.Button22.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button22.Location = New System.Drawing.Point(429, 461)
         Me.Button22.Name = "Button22"
@@ -410,6 +432,7 @@ Partial Class Principal
         '
         'Button23
         '
+        Me.Button23.Enabled = False
         Me.Button23.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button23.Location = New System.Drawing.Point(369, 461)
         Me.Button23.Name = "Button23"
@@ -420,6 +443,7 @@ Partial Class Principal
         '
         'Button24
         '
+        Me.Button24.Enabled = False
         Me.Button24.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button24.Location = New System.Drawing.Point(308, 461)
         Me.Button24.Name = "Button24"
@@ -430,6 +454,7 @@ Partial Class Principal
         '
         'Button25
         '
+        Me.Button25.Enabled = False
         Me.Button25.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button25.Location = New System.Drawing.Point(244, 461)
         Me.Button25.Name = "Button25"
@@ -440,6 +465,7 @@ Partial Class Principal
         '
         'Button26
         '
+        Me.Button26.Enabled = False
         Me.Button26.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button26.Location = New System.Drawing.Point(179, 461)
         Me.Button26.Name = "Button26"

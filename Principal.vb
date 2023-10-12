@@ -30,9 +30,14 @@
 
                 i = i - 1
                 Grupo.text = Mid(Lista_palabras.SelectedItem, i, 1)
-
+                Grupo.forecolor = Color.White
             End If
 
+            If TypeOf Grupo Is Button Then
+
+                Grupo.enabled = True
+
+            End If
 
         Next
         MsgBox(Lista_palabras.SelectedItem, i, 9)
