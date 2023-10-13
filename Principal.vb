@@ -6,6 +6,39 @@
     Dim intentos As Integer
     Dim Fallos As Integer
 
+
+    Sub Ganador()
+
+        Dim J As Integer
+
+        For Each Grupo In Controls
+
+            If TypeOf Grupo Is TextBox Then
+
+                If Grupo.tag = 1 Then
+
+                    If Grupo.forecolor = Color.Black Then
+
+                        J = J + 1
+
+                    End If
+
+                End If
+
+            End If
+
+        Next
+
+        If J = 10 Then
+            MsgBox("Felicidades has ganado")
+            Lista_palabras.Items.RemoveAt(Lista_palabras.SelectedIndex)
+            Volver_a_jugar()
+        End If
+
+
+    End Sub
+
+
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         intentos = 0
@@ -69,6 +102,7 @@
                 Volver_a_jugar()
             End If
 
+            Ganador()
 
         End If
 

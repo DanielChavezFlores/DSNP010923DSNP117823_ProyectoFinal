@@ -101,6 +101,7 @@ Partial Class Principal
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(31, 29)
         Me.TextBox1.TabIndex = 2
+        Me.TextBox1.Tag = "1"
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox2
@@ -111,6 +112,7 @@ Partial Class Principal
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(31, 29)
         Me.TextBox2.TabIndex = 3
+        Me.TextBox2.Tag = "1"
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox3
@@ -121,6 +123,7 @@ Partial Class Principal
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(31, 29)
         Me.TextBox3.TabIndex = 4
+        Me.TextBox3.Tag = "1"
         Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox4
@@ -131,6 +134,7 @@ Partial Class Principal
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(31, 29)
         Me.TextBox4.TabIndex = 5
+        Me.TextBox4.Tag = "1"
         Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox5
@@ -141,6 +145,7 @@ Partial Class Principal
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(31, 29)
         Me.TextBox5.TabIndex = 6
+        Me.TextBox5.Tag = "1"
         Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox6
@@ -151,6 +156,7 @@ Partial Class Principal
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(31, 29)
         Me.TextBox6.TabIndex = 7
+        Me.TextBox6.Tag = "1"
         Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox7
@@ -161,6 +167,7 @@ Partial Class Principal
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(31, 29)
         Me.TextBox7.TabIndex = 8
+        Me.TextBox7.Tag = "1"
         Me.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox8
@@ -171,6 +178,7 @@ Partial Class Principal
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(31, 29)
         Me.TextBox8.TabIndex = 9
+        Me.TextBox8.Tag = "1"
         Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox9
@@ -181,6 +189,7 @@ Partial Class Principal
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(31, 29)
         Me.TextBox9.TabIndex = 10
+        Me.TextBox9.Tag = "1"
         Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox10
@@ -191,6 +200,7 @@ Partial Class Principal
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(31, 29)
         Me.TextBox10.TabIndex = 11
+        Me.TextBox10.Tag = "1"
         Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Button1
@@ -561,17 +571,17 @@ Partial Class Principal
         '
         Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
-        Me.ImageList1.Images.SetKeyName(0, "Pic 7.jpg")
-        Me.ImageList1.Images.SetKeyName(1, "Pic 1.jpg")
-        Me.ImageList1.Images.SetKeyName(2, "Pic 2.jpg")
-        Me.ImageList1.Images.SetKeyName(3, "Pic 3.jpg")
-        Me.ImageList1.Images.SetKeyName(4, "Pic 4.jpg")
-        Me.ImageList1.Images.SetKeyName(5, "Pic 5.jpg")
-        Me.ImageList1.Images.SetKeyName(6, "Pic 6.jpg")
+        Me.ImageList1.Images.SetKeyName(0, "Principal mejorado.png")
+        Me.ImageList1.Images.SetKeyName(1, "Escena 1.png")
+        Me.ImageList1.Images.SetKeyName(2, "Escena 2.png")
+        Me.ImageList1.Images.SetKeyName(3, "Escena 3.png")
+        Me.ImageList1.Images.SetKeyName(4, "Escena 4.png")
+        Me.ImageList1.Images.SetKeyName(5, "Escena 5.png")
+        Me.ImageList1.Images.SetKeyName(6, "Escena 6.png")
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.DSNP010923DSNP117823_ProyectoFinal.My.Resources.Resources.Pic_7
+        Me.PictureBox1.Image = Global.DSNP010923DSNP117823_ProyectoFinal.My.Resources.Resources.Principal_mejorado
         Me.PictureBox1.Location = New System.Drawing.Point(634, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(397, 505)
