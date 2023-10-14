@@ -78,15 +78,15 @@ Partial Class Principal
         'Lista_palabras
         '
         Me.Lista_palabras.FormattingEnabled = True
-        Me.Lista_palabras.Items.AddRange(New Object() {"HABITACION", "ESTUDIANTE", "MOVIMIENTO", "CUADERNOS", "CALENDARIO", "DOCUMENTOS"})
-        Me.Lista_palabras.Location = New System.Drawing.Point(858, 549)
+        Me.Lista_palabras.Items.AddRange(New Object() {"HABITACION", "ESTUDIANTE", "MOVIMIENTO", "ABORIGENES", "CALENDARIO", "DOCUMENTOS", "AEROLINEAS", "CARRETERAS", "DESACTIVAR", "ESPERANZAS"})
+        Me.Lista_palabras.Location = New System.Drawing.Point(816, 354)
         Me.Lista_palabras.Name = "Lista_palabras"
         Me.Lista_palabras.Size = New System.Drawing.Size(168, 95)
         Me.Lista_palabras.TabIndex = 0
         '
         'Btn_Jugar
         '
-        Me.Btn_Jugar.Location = New System.Drawing.Point(670, 549)
+        Me.Btn_Jugar.Location = New System.Drawing.Point(915, 558)
         Me.Btn_Jugar.Name = "Btn_Jugar"
         Me.Btn_Jugar.Size = New System.Drawing.Size(100, 55)
         Me.Btn_Jugar.TabIndex = 1
@@ -502,7 +502,7 @@ Partial Class Principal
         Me.GroupBox1.Size = New System.Drawing.Size(200, 198)
         Me.GroupBox1.TabIndex = 38
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        Me.GroupBox1.Text = "Contadores"
         '
         'Label3
         '
@@ -571,17 +571,17 @@ Partial Class Principal
         '
         Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
-        Me.ImageList1.Images.SetKeyName(0, "Principal mejorado.png")
-        Me.ImageList1.Images.SetKeyName(1, "Escena 1.png")
-        Me.ImageList1.Images.SetKeyName(2, "Escena 2.png")
-        Me.ImageList1.Images.SetKeyName(3, "Escena 3.png")
-        Me.ImageList1.Images.SetKeyName(4, "Escena 4.png")
-        Me.ImageList1.Images.SetKeyName(5, "Escena 5.png")
-        Me.ImageList1.Images.SetKeyName(6, "Escena 6.png")
+        Me.ImageList1.Images.SetKeyName(0, "Principal.png")
+        Me.ImageList1.Images.SetKeyName(1, "Imagen 1.png")
+        Me.ImageList1.Images.SetKeyName(2, "Imagen 2.png")
+        Me.ImageList1.Images.SetKeyName(3, "Imagen 3.png")
+        Me.ImageList1.Images.SetKeyName(4, "Imagen 4.png")
+        Me.ImageList1.Images.SetKeyName(5, "Imagen 5.png")
+        Me.ImageList1.Images.SetKeyName(6, "Imagen 6.png")
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.DSNP010923DSNP117823_ProyectoFinal.My.Resources.Resources.Principal_mejorado
+        Me.PictureBox1.Image = Global.DSNP010923DSNP117823_ProyectoFinal.My.Resources.Resources.Principal
         Me.PictureBox1.Location = New System.Drawing.Point(634, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(397, 505)
@@ -593,6 +593,7 @@ Partial Class Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.ClientSize = New System.Drawing.Size(1038, 644)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
@@ -636,7 +637,7 @@ Partial Class Principal
         Me.Controls.Add(Me.Lista_palabras)
         Me.KeyPreview = True
         Me.Name = "Principal"
-        Me.Text = "Form1"
+        Me.Text = "Ahorcado"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

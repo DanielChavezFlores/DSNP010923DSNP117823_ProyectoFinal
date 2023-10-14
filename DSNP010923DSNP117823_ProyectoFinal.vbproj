@@ -128,5 +128,8 @@
   <ItemGroup>
     <None Include="Resources\Principal mejorado.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Principal.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -95,9 +95,10 @@
             Caja_aciertos.Text = coincidencia_contador
             Caja_fallos.Text = Fallos
 
-            If Fallos < 7 Then
+            If Fallos < 6 Then
                 PictureBox1.Image = ImageList1.Images(Fallos)
-            ElseIf Fallos >= 7 Then
+            ElseIf Fallos >= 6 Then
+                PictureBox1.Image = ImageList1.Images(Fallos)
                 MsgBox("Perdiste")
                 Volver_a_jugar()
             End If
