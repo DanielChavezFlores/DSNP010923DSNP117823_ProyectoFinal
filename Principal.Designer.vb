@@ -71,6 +71,7 @@ Partial Class Principal
         Me.Caja_de_intentos = New System.Windows.Forms.TextBox()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button27 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -86,12 +87,15 @@ Partial Class Principal
         '
         'Btn_Jugar
         '
+        Me.Btn_Jugar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Jugar.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Jugar.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Btn_Jugar.Location = New System.Drawing.Point(915, 558)
         Me.Btn_Jugar.Name = "Btn_Jugar"
         Me.Btn_Jugar.Size = New System.Drawing.Size(100, 55)
         Me.Btn_Jugar.TabIndex = 1
         Me.Btn_Jugar.Text = "Jugar"
-        Me.Btn_Jugar.UseVisualStyleBackColor = True
+        Me.Btn_Jugar.UseVisualStyleBackColor = False
         '
         'TextBox1
         '
@@ -507,7 +511,9 @@ Partial Class Principal
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.Info
         Me.Label3.Location = New System.Drawing.Point(10, 102)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(55, 19)
@@ -528,7 +534,9 @@ Partial Class Principal
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Info
         Me.Label2.Location = New System.Drawing.Point(10, 67)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(72, 19)
@@ -549,7 +557,9 @@ Partial Class Principal
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Info
         Me.Label1.Location = New System.Drawing.Point(10, 32)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(71, 19)
@@ -589,12 +599,25 @@ Partial Class Principal
         Me.PictureBox1.TabIndex = 39
         Me.PictureBox1.TabStop = False
         '
+        'Button27
+        '
+        Me.Button27.BackColor = System.Drawing.Color.Red
+        Me.Button27.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button27.ForeColor = System.Drawing.SystemColors.Info
+        Me.Button27.Location = New System.Drawing.Point(671, 563)
+        Me.Button27.Name = "Button27"
+        Me.Button27.Size = New System.Drawing.Size(94, 46)
+        Me.Button27.TabIndex = 40
+        Me.Button27.Text = "Salir"
+        Me.Button27.UseVisualStyleBackColor = False
+        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.ClientSize = New System.Drawing.Size(1038, 644)
+        Me.Controls.Add(Me.Button27)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button20)
@@ -693,4 +716,5 @@ Partial Class Principal
     Friend WithEvents Caja_fallos As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents Button27 As Button
 End Class
