@@ -158,6 +158,7 @@
     End Sub
 
     Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+        MsgBox("La aplicacion se cerrara")
         End
     End Sub
 End Class
